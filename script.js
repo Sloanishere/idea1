@@ -1,3 +1,10 @@
+const quotes = [
+  "Keep going. You’re leveling up in real life.",
+  "Discipline is rare XP. You just earned it.",
+  "The future you is proud of this.",
+  "You’re not just tracking — you’re transforming."
+];
+
 let xp = JSON.parse(localStorage.getItem("xpData")) || {};
 
 document.getElementById("xpForm").addEventListener("submit", function (e) {
