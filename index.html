@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Life XP Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Life XP Tracker</h1>
+    <form id="xpForm">
+      <input type="text" id="task" placeholder="What did you do?" required>
+      <select id="skill">
+        <option value="Strength">Strength</option>
+        <option value="Focus">Focus</option>
+        <option value="Wisdom">Wisdom</option>
+        <option value="Charisma">Charisma</option>
+      </select>
+      <input type="number" id="points" placeholder="XP points" required>
+      <button type="submit">Add XP</button>
+    </form>
+
+    <div id="xpDisplay"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
