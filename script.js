@@ -14,7 +14,12 @@ document.getElementById("xpForm").addEventListener("submit", function (e) {
   const points = parseInt(document.getElementById("points").value);
 
   if (!xp[skill]) xp[skill] = 0;
-  xp[skill] += points;
+  xp[skill] += pointsconst prevLevel = Math.floor((xp[skill] - points) / 100);
+const newLevel = Math.floor(xp[skill] / 100);
+if (newLevel > prevLevel) {
+  alert(`🎉 ${skill} leveled up to ${newLevel}!\n${quotes[Math.floor(Math.random() * quotes.length)]}`);
+}
+;
 
   localStorage.setItem("xpData", JSON.stringify(xp));
   function updateDisplay() {
